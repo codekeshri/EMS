@@ -21,7 +21,7 @@ export class LoginComponent {
 
 
   loginHandler(){
-    console.log('login')
+    console.log('login', this.loginObj)
     if(this.loginObj.username === 'admin' && this.loginObj.password === '112233'){
       this.router.navigateByUrl('/dashboard')
     }else{
